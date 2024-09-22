@@ -36,7 +36,7 @@ An agent-based conversational RAG LLM app, built from the [LangChain RAG](https:
 - Adds tools the agent can access for stored document retrieval
 
 ## Conversational Wikidata RAG Agent
-A conversational LLM agent using LangChain that can query Wikidata for up-to-date facts and incorporate them into generated responses.
+A conversational application using LangChain's prebuilt ReAct agent that can query Wikidata for up-to-date facts and incorporate them into generated responses.
 
 - accesses data via the Wikidata SPARQL endpoint to support inference 
 - supports return of implicit facts in the dataset not explicitly on individual records
