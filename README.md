@@ -38,12 +38,18 @@ An agent-based conversational RAG LLM app, built from the [LangChain RAG](https:
 ## Conversational Wikidata RAG Agent
 A conversational application using LangChain's prebuilt ReAct agent that can query Wikidata for up-to-date facts and incorporate them into generated responses.
 
-- accesses data via the Wikidata SPARQL endpoint to support inference 
-- supports return of implicit facts in the dataset not explicitly on individual records
-- defines a narrow scope of functionality in order to deal with the wide ranging schema of 
+- Accesses data via the Wikidata SPARQL endpoint to support inference 
+- Supports return of implicit facts in the dataset not explicitly on individual records
+- Defines a narrow scope of functionality in order to deal with the wide ranging schema of 
 
 ## Local Wikidata RAG Agent
-A conversational agent using a locally hosted LLM and LangChain that can query Wikidata for up-to-date facts and incorporate them into generated responses.
+A application using a locally hosted LLM and LangChain's prebuilt ReAct agent that can query Wikidata for up-to-date facts and incorporate them into generated responses.
 
 > [!CAUTION]
 > Using a locally hosted model (one that will run on a MacBook Pro) with this configuration leads to mixed results on anything beyond the most straightforward questions. See notebook for details. 
+
+## Local Wikidata ReAct Agent 0
+An application using a locally hosted LLM and a LangChain purpose-built ReAct agent for querying and integrating Wikidata facts into a generated response.
+
+> [!NOTE]
+> This notebook recreates the agent in `local-wikidata-rag-agent.ipynb` from scratch in order to expose the full set of LangChain features in order to support iteration beyond the limitations identified above.
