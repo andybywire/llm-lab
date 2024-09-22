@@ -41,3 +41,9 @@ A conversational application using LangChain's prebuilt ReAct agent that can que
 - accesses data via the Wikidata SPARQL endpoint to support inference 
 - supports return of implicit facts in the dataset not explicitly on individual records
 - defines a narrow scope of functionality in order to deal with the wide ranging schema of 
+
+## Local Wikidata RAG Agent
+A conversational agent using a locally hosted LLM and LangChain that can query Wikidata for up-to-date facts and incorporate them into generated responses.
+
+> [!CAUTION]
+> Using a locally hosted model (one that will run on a MacBook Pro) with this configuration leads to mixed results on anything beyond the most straightforward questions. See notebook for details. 
