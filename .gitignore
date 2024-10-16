@@ -2,3 +2,7 @@
 .vscode/
 .venv/
 .DS_Store
+/lang-graph-tutorials/2_chatbots/travel2.backup.sqlite
+/lang-graph-tutorials/2_chatbots/travel2.sqlite
+/lang-graph-tutorials/3_rag/Chinook.db
+/lang-graph-tutorials/

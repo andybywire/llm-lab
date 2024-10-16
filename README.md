@@ -48,8 +48,20 @@ A application using a locally hosted LLM and LangChain's prebuilt ReAct agent th
 > [!CAUTION]
 > Using a locally hosted model (one that will run on a MacBook Pro) with this configuration leads to mixed results on anything beyond the most straightforward questions. See notebook for details. 
 
-## Local Wikidata ReAct Agent 0
+## Local Wikidata Agent 0
 An application using a locally hosted LLM and a LangChain purpose-built ReAct agent for querying and integrating Wikidata facts into a generated response.
 
 > [!NOTE]
 > This notebook recreates the agent in `local-wikidata-rag-agent.ipynb` from scratch in order to expose the full set of LangChain features in order to support iteration beyond the limitations identified above.
+
+## Local Wikidata Agent 1
+An iteration of Local Wikidata Agent 0 intended to break evaluation down into smaller, more manageable steps for a less-capable LLM. This version was _not_ successful in achieving its goals. 
+
+## Local Wikidata Agent 2
+This exercise builds on the `local-wikidata-agent-1.ipynb` exercise, significanlty simplifying and streamlinig the agent architecture in order to constrain the LLM to relevant outputs that lead to a response to the user query.  
+
+- Abandons LangGraph for a simpler, more straightforward LangGraph implementation
+- Forces individual evaluation of query parameters (evaluations are run in parallel)
+- Refines prompts for each query parameter and provides few-shot examples to prime expected responses 
+- Removes the LLM's direct access to the query tool, which runs as an undecorated function
+- Provides a final "response" agent with a set of facts returned from the knowledge graph and interleaved in a system prompt along with the initial user query
